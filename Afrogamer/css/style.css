@@ -1,0 +1,543 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Utilities */
+.bgorange {
+  display: inline-block;
+  background: rgb(202, 134, 7);
+  padding: 0.5rem 1rem;
+}
+
+.bgwhite {
+  background-color: #fff;
+  width: 300px;
+}
+
+.bggrey {
+  background: #333;
+}
+
+.bgdark {
+  background: rgb(12, 12, 12);
+}
+
+.bigheading {
+  font-size: 3.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.midheading {
+  font-size: 1.5rem;
+}
+
+.textprimary {
+  color: orange;
+}
+
+.textdark {
+  color: rgb(100, 100, 100);
+}
+
+.smallandbold {
+  font-size: small;
+  font-weight: bold;
+}
+
+.btn {
+  border-radius: 20px;
+}
+
+.btnprimary {
+  background-color: orange;
+}
+
+.btnsecondary {
+  background-color: orangered;
+}
+
+.btndark {
+  background-color: rgb(61, 47, 47);
+}
+
+i {
+  color: orange;
+}
+
+.logo {
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* Navbar */
+#navbar {
+  background-color: #333;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid orange;
+  z-index: 1;
+}
+
+.navlinks {
+  display: flex;
+}
+
+.navlinks li, .login li {
+  list-style: none;
+}
+
+.logo a, .navlinks a {
+  display: inline-block;
+  /* margin: 0 1rem; */
+  text-decoration: none;
+  color: #fff;
+  padding: 0.25rem 1rem;
+}
+
+.login {
+  display: flex;
+}
+
+.login .log {
+  margin-right: 0.25rem;
+}
+
+.login .log a {
+  color: #fff;
+}
+
+.login .log a:hover {
+  color: orange;
+  background: none;
+  transition: color 0.5s;
+}
+
+.login a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.login a:hover {
+  color: #333;
+  background-color: rgb(202, 134, 7);
+  border-radius: 20px;
+  transition: background-color 0.5s;
+}
+
+.navlinks a:hover {
+  color: #333;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: orange;
+  transition: background-color 0.5s;
+}
+
+/* Showcase */
+#showcase {
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  background: url('../img/lastofusshowcase.jpg') no-repeat center center/cover;
+}
+
+#showcase .showcasecontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0 2rem;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#showcase p, #showcase a {
+  margin-bottom: 1rem;
+}
+
+#showcase a {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#showcase a:hover {
+  background-color: rgb(202, 134, 7);
+  color: #333;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+/* Games Categories */
+.action {
+  background: url('../img/acvcategory.jpg') no-repeat center center/cover;
+}
+
+.adventure {
+  background: url('../img/dscategory.jpg') no-repeat center center/cover;
+}
+
+.shooter {
+  background: url('../img/wzcategory.jpg') no-repeat center center/cover;
+}
+
+.rpg {
+  background: url('../img/p5category.jpg') no-repeat center center/cover;
+}
+
+.transparent {
+  padding: 1.5rem;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.categories {
+  display: flex;
+  color: white;
+  margin: 5rem;
+}
+
+.categories .boldp {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 3rem;
+}
+
+.categories .comments {
+  color: #f1bcbc;
+}
+
+h6 {
+  margin-bottom: 10rem;
+}
+
+.actioncat {
+  display: inline-block;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  background-color: red;
+}
+
+.adventurecat {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: green;
+}
+
+.shootercat {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: blue;
+}
+
+.rpgcat {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: yellowgreen;
+}
+
+/* Recent Games */
+.container {
+  background-color: #f4f4f4;
+  padding: 2.5rem;
+}
+
+.newtext {
+  display: inline-block;
+  color: #fff;
+  padding: 0.3rem 1.5rem;
+  background: crimson;
+}
+
+.toptext {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.latestgames {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bgwhite {
+  display: flex;
+  flex-direction: column;
+}
+
+.bgwhite h2, .bgwhite p {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+/* Tournament */
+#tournaments {
+  background: #333;
+  padding: 5rem;
+}
+
+.tournaments {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+#tournaments ul li, .tournamentinfo {
+  list-style: none;
+  color: #f1bcbc;
+  margin-bottom: 1rem;
+  font-size: small;
+}
+
+#tournaments ul {padding-top: 2rem;}
+
+#tournaments img {
+  height: 250px;
+  width: 200px;
+}
+
+.tournamentinfo {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-gap: 2rem;
+  margin-top: 2.5rem;
+  padding-left: 1rem;
+  /* margin-bottom: 3.5rem; */
+}
+
+.tournamentinfo > p {
+  margin-bottom: 1.5rem;
+}
+
+.prize {
+  padding-top: 2rem;
+}
+
+/* Reviews */
+#reviews {
+  padding: 3rem;
+}
+
+.reviewgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.reviews {
+  display: grid;
+  grid-template-rows: 4.2fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.reviewtext {
+  text-align: center;
+}
+
+.assassin {
+  background: url('../img/acvcategory.jpg') no-repeat top center/cover;
+}
+
+.deathstranding {
+  background: url('../img/dscategory.jpg') no-repeat top center/cover;
+}
+
+.codcw {
+  background: url('../img/codcw2.jpg') no-repeat top center/cover;
+}
+
+.fifareview {
+  background: url('../img/fifa21.jpg') no-repeat top center/cover;
+}
+
+.reviewscoreacv {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  background: yellowgreen;
+  padding: 1.5rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.reviewscoreds {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  background: coral;
+  padding: 1.5rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.reviewscorecw {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  background: greenyellow;
+  padding: 1.5rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.reviewscorefifa {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  background: coral;
+  padding: 1.5rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+/* Latest */
+.latestgrid {
+  background: #333;
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.pngimage {
+  height: 350px;
+  width: 250px;
+  background: url('../img/God-of-War-Transparent-Background.png') no-repeat center center/cover;
+  filter: drop-shadow(24px 24px 24px rgb(0, 0, 0));
+}
+
+.latestgrid p {
+  color: #f1bcbc;
+  font-size: smaller;
+}
+
+.latestgrid h1 {
+  color: #fff;
+}
+
+.firstrow {
+  text-align: center;
+}
+
+.firstrow .logo {
+  margin-bottom: 1rem;
+}
+
+.firstrow p {
+  margin-top: 1rem;
+}
+
+.gamesimages1 {
+  height: 100px;
+  width: 100px;
+  background: url('../img/cp2077.jpg') no-repeat center center/cover;
+}
+.gamesimages2 {
+  height: 100px;
+  width: 100px;
+  background: url('../img/ghosttsushima.jpg') no-repeat center center/cover;
+}
+.gamesimages3 {
+  height: 100px;
+  width: 100px;
+  background: url('../img/spidermiles.jpg') no-repeat center center/cover;
+}
+
+.personimage1 {
+  height: 70px;
+  width: 70px;
+  background: url('../img/person1.jpg') no-repeat center center/cover;
+  border-radius: 50%;
+}
+.personimage2 {
+  height: 70px;
+  width: 70px;
+  background: url('../img/person2.jpg') no-repeat center center/cover;
+  border-radius: 50%;
+}
+.personimage3 {
+  height: 70px;
+  width: 70px;
+  background: url('../img/person3.jpg') no-repeat center center/cover;
+  border-radius: 50%;
+}
+.personimage4 {
+  height: 70px;
+  width: 70px;
+  background: url('../img/person4.jpg') no-repeat center center/cover;
+  border-radius: 50%;
+}
+
+.latestpost, .topcomments {
+  padding: 2rem;
+  background: rgb(37, 37, 37);
+}
+
+.postsflex, .commentsflex {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.postsflex p {
+  margin-left: 1rem;
+}
+
+.postdate{
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+
+.commentsflex p {
+  margin-left: 1rem;
+}
+
+.latestpost h1 {
+  margin-bottom: 2rem;
+}
+
+.topcomments h1 {
+  margin-bottom: 3rem;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(37, 37, 37);
+  text-align: center;
+  color: #f1bcbc;
+  padding: 2rem;
+}
+
+.footerlinks {
+  display: flex;
+}
+
+.footerlinks li {
+  list-style: none;
+}
+
+.footerlinks li a {
+  color: #f1bcbc;
+  text-decoration: none;
+  padding: 0 1rem;
+}

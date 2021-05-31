@@ -1,0 +1,93 @@
+#navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: static;
+}
+
+.navlinks {
+  margin-top: 0.5rem;
+}
+
+.login {
+  margin-top: 0.5rem;
+}
+
+/* Showcase */
+#showcase h1 {
+  font-size: 2.5rem;
+}
+
+/* Categories */
+.categories {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Recent Games */
+.latestgames {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+/* Tournamrnt */
+.tournamentinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Reviews */
+.reviewgrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* Latest Posts */
+.pngimage {
+  display: none;
+}
+
+.latestgrid {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer */
+#footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerlinks {
+  margin-top: 1rem;
+}
+
+@media(max-width: 600px) {
+  .categories {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .latestgames {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tournaments {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pngimage {
+    display: none;
+  }
+}

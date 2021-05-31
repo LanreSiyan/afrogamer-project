@@ -1,0 +1,9 @@
+.tournamentinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
